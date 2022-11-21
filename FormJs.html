@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .inputs and .labels {
+            display: inline-block;
+        }
+
+        .Form {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .labels {
+            margin-top: -20px;
+            margin-right: 30px;
+            text-align: right;
+        }
+
+        h1 {
+            text-align: center;
+            margin-left: -20px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+
+        #Submit {
+            width: 300px;
+            justify-content: center;
+            text-align: center;
+            padding: 7px;
+            border-radius: 5px;
+            border: none;
+            background-color: green;
+            font-weight: 700;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="whitesmoke">
+    <h1>Registration Form</h1>
+    <div class="Form">
+
+        <div class="labels">
+            <h3>FirstName </h3>
+            <h3>LastName </h3>
+            <h3>Password </h3>
+            <h3> E-mail id</h3>
+            <h3>Contact No.</h3>
+            <h3>Address </h3>
+            <h3>Country </h3>
+            <h3>Gender</h3>
+            <h3>Hobbies </h3>
+            <h3>ID Proof</h3>
+        </div>
+        <div class="inputs">
+            <input type="text" name="FirstName" id="FirstName" placeholder=" First Name" /><br><br>
+            <input type="text" name="LastName" id="LastName" placeholder="Last Name" /><br><br>
+            <input type="Password" name="Password" id="Password" placeholder="Password" /><br><br>
+
+            <input type="text" name="email_id" id="email_id" placeholder="Email id" /><br> <br>
+            <input type="text" name="Contact" id="Contact" placeholder="Contact No." /><br> <br>
+            <textarea name="Address" id="Address" rowa="4" cols="10" placeholder="Address" /></textarea><br><br>
+            <select name="country" id="country" placeholder="select your country">
+                <option value="UK" id="country">INDIA </option>
+                <option value="US" id="country">United stats</option>
+                <option value="INDIA" id="country">United Kingdom </option>
+                <option value="Canada" id="country">Canada </option>
+            </select><br><br>
+
+            Male <input type="Radio" name="gender" id="gender" />
+            Female <input type="Radio" name="gender" id="gender" />
+            Other <input type="Radio" name="gender" id="gender" /><br><br>
+
+            <input type="checkbox" name="cricket" id="Hobbies" />Cricket
+            <input type="checkbox" name="cricket" id="Hobbies" />Drawing
+            <input type="checkbox" name="cricket" id="Hobbies" />Dancing
+            <input type="checkbox" name="cricket" id="Hobbies" />Reading <br><br>
+            <input type="file" accept="image/*" /><br><br>
+            </form>
+        </div>
+    </div>
+    <div class="btn">
+        <input type="Submit" name="Submit" id="Submit" onclick="myFunction()" />
+
+    </div>
+    <table border="2px">
+        <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>pwd</th>
+            <th>email</th>
+            <th>contact</th>
+            <th>address</th>
+            <th>country</th>
+            <th>gender</th>
+            <th>hobbies</th>
+        </tr>
+        <tr>
+            <td id="firstname"></td>
+            <td id="lastname"></td>
+            <td id="pwd"></td>
+            <td id="email"></td>
+            <td id="contact"></td>
+            <td id="address"></td>
+            <td id="country"></td>
+            <td id="gender"></td>
+            <td id="hobbies"></td>
+        </tr>
+
+    </table>
+    </p>
+    <script>
+        function myFunction() {
+            let fname = document.getElementById("FirstName").value;
+            document.getElementById("firstname").innerHTML = fname;
+            console.log(fname);
+
+            let lname = document.getElementById("LastName").value;
+            document.getElementById("lastname").innerHTML = lname;
+            console.log(lname);
+
+
+            let pwd = document.getElementById("Password").value;
+            document.getElementById("pwd").innerHTML = pwd;
+            console.log(pwd);
+
+
+            let email = document.getElementById("email_id").value;
+            document.getElementById("email").innerHTML = email;
+            console.log(email);
+
+
+            let contact = document.getElementById("Contact").value;
+            document.getElementById("contact").innerHTML = contact;
+            console.log(contact);
+
+
+            let address = document.getElementById("Address").value;
+            document.getElementById("address").innerHTML = address;
+            console.log(address);
+
+
+            let country = document.getElementById("country").value;
+            document.getElementById("country").innerHTML = country;
+            console.log(country);
+
+
+            let gender = document.getElementById("gender").value;
+            document.getElementById("gender").innerHTML = gender;
+            console.log(gender);
+
+
+            let hobbies = document.getElementById("Hobbies").value;
+            document.getElementById("hobbies").innerHTML = hobbies;
+            console.log(hobbies);
+
+
+        }
+    </script>
+
+</body>
+
+</html>

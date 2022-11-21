@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+
+}
+#wrapper1{
+    padding: 150px;
+
+}
+#wrapper2{
+    padding: 150px;
+
+}
+
+.form_div1{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    background-color: whitesmoke;
+    margin: 0 auto; /* to make the div center align to the browser */
+    width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+.form_div2{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    background-color: whitesmoke;
+    margin: 0 auto; /* to make the div center align to the browser */
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+input{
+    width: 100%;
+    padding: 10px;
+}
+
+p{
+    color: black ;
+    font-weight:500 ;
+    text-align: left;
+}
+#login{
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+#Singup{
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+}
