@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .inputs {
+            background-color: whitesmoke;
+
+        }
+
+        .Form {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            background-color: whitesmoke;
+            width: 350px;
+            margin: 0 auto;
+            margin-top: 20px;
+            align-content: center;
+
+
+        }
+
+        .inputs {
+            margin-right: 20px;
+        }
+
+        input {
+            margin-top: 5px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+        }
+
+
+
+        p {
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        #heading {
+            text-align: center;
+        }
+
+
+
+        #Submit {
+            width: 150px;
+            justify-content: center;
+            text-align: center;
+            padding: 7px;
+            border: none;
+            background-color: green;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: white;
+            margin-left: 70px;
+        }
+
+        table {
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="Form">
+
+
+        <div class="inputs">
+            <p id="heading">Registration Form</p>
+
+            <input type="text" name="FirstName" id="FirstName" placeholder=" First Name" /><br><br>
+            <input type="text" name="LastName" id="LastName" placeholder="Last Name" /><br><br>
+            <input type="email" name="email_id" id="email_id" placeholder="Email id" /><br> <br>
+            <input type="tel" name="Contact" id="Contact" placeholder="Contact No." /><br> <br>
+            <input type="Password" name="Password" id="Password" placeholder="Password" /><br><br>
+            <input type="Password" name="confirm_password" id="confirm_password"
+                placeholder="Confirm Password" /></input><br><br>
+            <input type="file" id="file" accept="image/*" /><br><br>
+            <input type="Submit" name="Submit" id="Submit" onclick="myFunction()" />
+
+            </form>
+        </div>
+
+
+    </div>
+    <table border="2px">
+        <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>email</th>
+            <th>contact</th>
+            <th>pwd</th>
+            <th>confirm password</th>
+
+        </tr>
+        <tr>
+            <td id="firstname"></td>
+            <td id="lastname"></td>
+            <td id="email"></td>
+            <td id="contact"></td>
+            <td id="pwd"></td>
+            <td id="confirm_password"></td>
+
+        </tr>
+
+    </table>
+    </p>
+    <script>
+        function myFunction() {
+            let fname = document.getElementById("FirstName").value;
+            document.getElementById("firstname").innerHTML = fname;
+            console.log(fname);
+
+            let lname = document.getElementById("LastName").value;
+            document.getElementById("lastname").innerHTML = lname;
+            console.log(lname);
+
+
+            let email = document.getElementById("email_id").value;
+            document.getElementById("email").innerHTML = email;
+            console.log(email);
+
+
+            let contact = document.getElementById("Contact").value;
+            document.getElementById("contact").innerHTML = contact;
+            console.log(contact);
+
+
+            let pwd = document.getElementById("Password").value;
+            document.getElementById("pwd").innerHTML = pwd;
+            console.log(pwd);
+
+            let address = document.getElementById("confirm_password").value;
+            document.getElementById("confirm_password").innerHTML = address;
+            console.log(address);
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>

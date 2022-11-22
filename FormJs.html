@@ -6,18 +6,34 @@
     <style>
         .inputs and .labels {
             display: inline-block;
+            background-color: whitesmoke;
+            margin-top: 10px;
+
         }
 
         .Form {
             display: flex;
             justify-content: center;
             margin-top: 50px;
+            background-color: whitesmoke;
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+
         }
 
         .labels {
-            margin-top: -20px;
             margin-right: 30px;
             text-align: right;
+
+        }
+
+        .input {
+            margin-top: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -29,11 +45,13 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
-
+            background-color: whitesmoke;
+            width: 500px;
+            margin: 0 auto;
         }
 
         #Submit {
-            width: 300px;
+            width: 150px;
             justify-content: center;
             text-align: center;
             padding: 7px;
@@ -41,35 +59,41 @@
             border: none;
             background-color: green;
             font-weight: 700;
+            margin-bottom: 30px;
+
+        }
+
+        table {
+            margin-top: 200px;
         }
     </style>
 
 </head>
 
-<body bgcolor="whitesmoke">
+<body>
     <h1>Registration Form</h1>
     <div class="Form">
 
         <div class="labels">
-            <h3>FirstName </h3>
-            <h3>LastName </h3>
-            <h3>Password </h3>
-            <h3> E-mail id</h3>
-            <h3>Contact No.</h3>
-            <h3>Address </h3>
-            <h3>Country </h3>
-            <h3>Gender</h3>
-            <h3>Hobbies </h3>
-            <h3>ID Proof</h3>
+            <p>FirstName </p>
+            <p>LastName </p>
+            <p>Password </p>
+            <p> E-mail id</p>
+            <p>Contact No.</p>
+            <p>Address </p>
+            <p>Country </p>
+            <p>Gender</p>
+            <p>Hobbies </p>
+            <p>ID Proof</p>
         </div>
         <div class="inputs">
             <input type="text" name="FirstName" id="FirstName" placeholder=" First Name" /><br><br>
             <input type="text" name="LastName" id="LastName" placeholder="Last Name" /><br><br>
             <input type="Password" name="Password" id="Password" placeholder="Password" /><br><br>
 
-            <input type="text" name="email_id" id="email_id" placeholder="Email id" /><br> <br>
-            <input type="text" name="Contact" id="Contact" placeholder="Contact No." /><br> <br>
-            <textarea name="Address" id="Address" rowa="4" cols="10" placeholder="Address" /></textarea><br><br>
+            <input type="email" name="email_id" id="email_id" placeholder="Email id" /><br> <br>
+            <input type="tel" name="Contact" id="Contact" placeholder="Contact No." /><br> <br>
+            <textarea name="Address" id="Address" rowa="2" cols="30" placeholder="Address" /></textarea><br><br>
             <select name="country" id="country" placeholder="select your country">
                 <option value="UK" id="country">INDIA </option>
                 <option value="US" id="country">United stats</option>
